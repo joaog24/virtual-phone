@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image:linear-gradient(120deg, #4942444f, #5e56575f, #6c655d55, #7b716a6e);
+}
+header{
+    margin-bottom: 100px;
+    margin: auto;
+}
+header h1 {
+    font-size: 40px;
+}
+
+.celular{
+    background-color: #00598689;
+    padding: 20px;
+    border-radius: 30px;
+    border: solid 3px rgba(0, 0, 0, 0.408)    ;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+input{
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+input[type=button]{
+    border-radius: 50px;
+    border: solid 1px  #26262603;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    background-color: #ffffffcd;
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type=tel] {
+    background-color: #ffffffcd;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 22px;
+    height: 40px;
+    margin-bottom: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 280px;
+}
+
+input[type=button]:hover{
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.958);
+    font-weight: bold;
+}
